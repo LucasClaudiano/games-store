@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 9em;
+    align-items: center;
+    padding-top: 1em;
+    background-color: black;
+    color: white;
+}
+.container li{
+    display: flex;
+    justify-content: space-between;
+}
+.container li ul a{
+    list-style: none;
+    text-decoration: none;
+    font-size: 45px;
+    color: white;
+}
+.carousel{
+    justify-content: center;
+    align-items: center;
+    height: 1200px;
+}
+.produtos{
+    text-align: center;
+    margin: 3em 0;
+    padding: 2em;
+    background-color: black;
+    color: white;
+}
+.produtos-itens ul{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: center
+}
+.item-lista{
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    font-size:30px ;
+}
+
+.produtos-itens ul li img{
+    width: 100%;
+    
+}
+
+.btn{
+    height: 80px;
+    font-size: 30px;
+    border-radius: 0.3em;;
+}
+
+@media  screen and (max-width:767px){
+    .cabecalho, .container li{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+        
+    }
+    
+    .container li ul a{
+        font-size: 18px;
+    }
+    .container li{
+        display: flex;
+        
+    }
+    .cabecalho{
+        font-size: 10px;
+        padding: 0 ;
+    }    
+    .produtos-itens ul{
+        display: grid;
+        grid-template-columns: repeat(1, 90%);
+        justify-content: center;
+
+    }
+    .item-lista{
+        margin: 15%;
+    }
+    .carousel-control-prev , .carousel-control-next{
+        display: none;
+    }
+    .carousel{
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    .cabecalho, .container li{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .carousel{
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .cabecalho h1{
+        font-size: 50px;
+    }
+    .container li ul a{
+        font-size: 35px;
+    }
+    .produtos-itens ul{
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        justify-content: center;
+
+    }
+}
