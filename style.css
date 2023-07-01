@@ -9,9 +9,14 @@
     justify-content: space-between;
     padding: 2em 9em;
     align-items: center;
-    padding-top: 1em;
     background-color: black;
     color: white;
+}
+.cabecalho h1{
+    font-size: 40px;
+}
+.container li ul{
+    padding: 0;
 }
 .container li{
     display: flex;
@@ -20,7 +25,7 @@
 .container li ul a{
     list-style: none;
     text-decoration: none;
-    font-size: 45px;
+    font-size: 25px;
     color: white;
 }
 .carousel{
@@ -59,25 +64,27 @@
 }
 
 @media  screen and (max-width:767px){
-    .cabecalho, .container li{
+    .cabecalho{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+        font-size: 10px;
+    }
+    .container li{
         display: flex;
         flex-direction: column;
         text-align: center;
-        
-        
     }
     
     .container li ul a{
         font-size: 18px;
-    }
-    .container li{
-        display: flex;
         
     }
-    .cabecalho{
-        font-size: 10px;
-        padding: 0 ;
-    }    
+    .container{
+        display: flex;
+    }  
     .produtos-itens ul{
         display: grid;
         grid-template-columns: repeat(1, 90%);
