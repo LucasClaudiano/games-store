@@ -25,6 +25,7 @@
 .container li ul a{
     list-style: none;
     text-decoration: none;
+    padding: 1em;
     font-size: 25px;
     color: white;
 }
